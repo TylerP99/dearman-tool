@@ -8,9 +8,9 @@ A small website explaining the DBT skill "D.E.A.R. M.A.N.", used for more succes
 
 ## Roadmap
 
-[ ] Add basic HTML content
-[ ] Style content some
-[ ] Add forms in each section to make a guided script
-[ ] Add a complete script maker
-[ ] Finalize styling
-[ ] Consider expanding to other skills
+- [ ] Add basic HTML content
+- [ ] Style content some
+- [ ] Add forms in each section to make a guided script
+- [ ] Add a complete script maker
+- [ ] Finalize styling
+- [ ] Consider expanding to other skills
