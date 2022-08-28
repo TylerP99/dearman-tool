@@ -23,6 +23,7 @@ header {
 
 main {
     background: #e1e1e1;
+    padding: 5rem 0;
 }
 
 footer {
@@ -44,7 +45,12 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: bold;
-    text-decoration: underline;
+
+    border-bottom: 3px solid;
+
+    width: 30%;
+
+    padding-left: 2rem;
 
     margin-bottom: 2rem;
 }   
@@ -87,6 +93,8 @@ main > section{
     width: 80%;
 
     padding: 2rem 3rem;
+
+    margin-bottom: 2rem;
 }
 
 main > section > p {
@@ -98,10 +106,15 @@ main > section > p {
 
     color: #eee;
     background: #A663CC;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .express-section, .reinforce-section, .confident-section {
     margin-left: auto;
 
     background: #B9FAF8;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
