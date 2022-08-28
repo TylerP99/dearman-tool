@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, footer {
+    padding: 2rem 6rem 4rem 6rem;
+}
+
+header {
+    background: #B298DC;
+}
+
+main {
+    background: #e1e1e1;
+}
+
+footer {
+    background: #B8D0EB;
+}
+
+h1 {
+
+    max-width: 50%;
+    
+    font-size: 5rem;
+    font-weight: bold;
+
+    border-bottom: 5px solid;
+
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+
+    margin-bottom: 2rem;
+}   
+
+h4 {
+    font-size: 2.5rem;
+
+    margin-bottom: 1rem;
+}
+
+p, ol, form {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ol {
+    margin-bottom: 2rem;
+}
+
+form {
+    background: #f8f8f8;
+    color: #111;
+    border-radius: 25px;
+    padding: 3rem;
+
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    width: 80%;
+}
+
+textarea {
+    width: 80%;
+}
+
+main > section{
+    width: 80%;
+
+    padding: 2rem 3rem;
+}
+
+main > section > p {
+    margin-bottom: 4rem;
+}
+
+.describe-section, .assert-section, .mindful-section, .negotiate-section {
+    margin-right: auto;
+
+    color: #eee;
+    background: #A663CC;
+}
+
+.express-section, .reinforce-section, .confident-section {
+    margin-left: auto;
+
+    background: #B9FAF8;
+}
