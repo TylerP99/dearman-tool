@@ -1,3 +1,45 @@
+// Add field buttons
+const addReinforcementButton = document.querySelector("#add-reinforcement");
+addReinforcementButton.addEventListener("click", () => {
+    const inputs = document.querySelector("#reinforcement-inputs");
+    const newInput = document.createElement("input");
+    newInput.classList.add("reinforcement");
+    newInput.type = "text";
+    newInput.placeholder = "A positive outcome";
+    inputs.appendChild(newInput);
+});
+
+const addMindfulStrategyButton = document.querySelector("#add-mindful-strategy");
+addMindfulStrategyButton.addEventListener("click", () => {
+    const inputs = document.querySelector("#mindful-inputs");
+    const newInput = document.createElement("input");
+    newInput.classList.add("strategy");
+    newInput.type = "text";
+    newInput.placeholder = "Mindfulness Strategy";
+    inputs.appendChild(newInput);
+});
+
+const addConfidenceButton = document.querySelector("#add-confident");
+addConfidenceButton.addEventListener("click", () => {
+    const inputs = document.querySelector("#confident-inputs");
+    const newInput = document.createElement("input");
+    newInput.classList.add("appear-confident");
+    newInput.type = "text";
+    inputs.appendChild(newInput);
+});
+
+const addNegotiationButton = document.querySelector("#add-negotiation");
+addNegotiationButton.addEventListener("click", () => {
+    const inputs = document.querySelector("#negotiation-inputs");
+    const newInput = document.createElement("input");
+    newInput.classList.add("negotiation");
+    newInput.type = "text";
+    inputs.appendChild(newInput);
+});
+
+
+
+
 
 const generateButton = document.querySelector("#submit-button");
 generateButton.addEventListener("click", create_dearman_guide);

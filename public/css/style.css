@@ -30,6 +30,11 @@ main {
 
 footer {
     background: #B8D0EB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1 {
