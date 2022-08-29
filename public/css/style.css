@@ -197,11 +197,26 @@ main > section > p {
 }
 
 @media screen and (max-width:700px) {
-    body {
-        width: 100%;
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    header > * {
+        width: 90%;
+    }
+    header > section {
+        width: 90%;
     }
 
     form {
         padding: 1rem;
+    }
+
+    form > * {
+        width: 90%;
+    }
+
+    form input {
+        width: 100%;
     }
 }
