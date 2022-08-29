@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -21,6 +21,22 @@ header {
     background: #B298DC;
 
     padding-top: 10rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > section {
+    width: 40%;
+    background: #eee;
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+header strong {
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 main {
@@ -45,6 +61,8 @@ h1 {
     border-bottom: 5px solid;
 
     margin-bottom: 3rem;
+
+    width: 40%;
 }
 
 h2 {
@@ -76,6 +94,7 @@ p, ol, form {
 
 p {
     margin-bottom: 1rem;
+    text-indent: 4rem;
 }
 
 ol {
@@ -99,13 +118,48 @@ form {
     align-items: center;
 }
 
+form > section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+}
+
 textarea {
     font-size: 1.6rem;
     padding: 1rem;
 
+    border-radius: 10px;
+
     width: 80%;
 
     resize: none;
+}
+
+button {
+    font-size: 1.6rem;
+
+    background: #eee;
+    color: #111;
+    border-radius: 10px;
+    border: 3px solid;
+
+    padding: 1rem 2rem; 
+}
+
+button:hover {
+    cursor: pointer;
+    background: #ccc;
 }
 
 main > section{
@@ -113,7 +167,7 @@ main > section{
 
     padding: 2rem 3rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 main > section > p {
