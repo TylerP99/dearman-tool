@@ -100,14 +100,14 @@ class Dearman_entry {
 
     get_appear_confident_entry() {
         const confidentForm = document.querySelector(".appear-confident-form");
-        let formEntries = confidentForm.querySelectorAll("appear-confident");
+        let formEntries = confidentForm.querySelectorAll(".appear-confident");
         formEntries = Array.from(formEntries).map(x=>x.value);
         return formEntries;
     }
 
     get_negotiate_entry() {
         const negotiateForm = document.querySelector(".negotiate-form");
-        let negotiations = negotiateForm.querySelectorAll("negotiation");
+        let negotiations = negotiateForm.querySelectorAll(".negotiation");
         negotiations = Array.from(negotiations).map(x=>x.value);
         return negotiations;
     }
