@@ -45,7 +45,7 @@ const generateButton = document.querySelector("#submit-button");
 generateButton.addEventListener("click", create_dearman_guide);
 
 function create_dearman_guide() {
-    const targetSection = document.querySelector(".dearman-guide-result");
+    const targetSection = document.querySelector("footer");
     const dearmanMaker = new Dearman_entry;
     dearmanMaker.append_document(targetSection);
 }
