@@ -15,7 +15,8 @@
 
         <h1>What is D.E.A.R. M.A.N.?</h1>
 
-        <p>D.E.A.R. M.A.N. is a skill coming from Dialectical Behavioral Therapy, or DBT. It is used to have a more successful interaction with someone when asking for something or saying no to something. D.E.A.R. M.A.N. is an acronym used for remembering the steps in this process. It breaks down into:</p>
+        <p>D.E.A.R. M.A.N. is a skill coming from Dialectical Behavioral Therapy, or DBT. It is used to have a more successful interaction with someone when asking for something or saying no to something. D.E.A.R. M.A.N. is an acronym used for remembering the steps in this process.</p>
+        <p>It stands for:</p>
         <ol>
             <li><strong>D</strong>escribe</li>
             <li><strong>E</strong>xpress</li>
@@ -42,9 +43,9 @@
                 </select>
             </form>
 
-            <form>
+            <form class="topic-form">
                 <h4>Enter in the overarching topic of the conversation:</h4>
-                <input type="text" placeholder="Topic">
+                <input id="topic" type="text" placeholder="Topic">
             </form>
         </article>
 
@@ -53,12 +54,12 @@
             <h2>Describe</h2>
             <p>The first step is to describe the problem only using facts. It is important to be specific and clear in describing the topic. This step may not be necessary if the situation has already been described (i.e. if you are saying no to a request that was just asked).</p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vitae aperiam exercitationem eveniet, adipisci doloremque dignissimos nesciunt blanditiis aliquid a tenetur quaerat nemo possimus cupiditate quibusdam, veritatis quas assumenda iure?</p>
+            <p class="no-example">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio aspernatur, corrupti natus quasi quibusdam est ut eveniet iure fugit consectetur molestiae accusamus ratione quidem. Laborum, cum sapiente? Vero, itaque tenetur?</p>
 
-            <form>
+            <form class="describe-form">
                 <h4>Describe the situation, remembering to only stick to the facts:</h4>
-                <textarea></textarea>
+                <textarea id="description" rows="5"></textarea>
             </form>
 
         </section>
@@ -68,12 +69,12 @@
             <h2>Express</h2>
             <p>In this step, you tell the other party how you feel. It is advised to use "I" statements (I feel like ____) during this step. Again, be as specific as possible here and do not assume the other party knows or should know how you feel. </p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem praesentium quae quis magnam cumque cupiditate voluptate, sunt ratione ut, porro excepturi illo dolore reiciendis. Ipsam earum voluptatibus enim nesciunt.</p>
+            <p class="no-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur nam laboriosam sequi laborum placeat modi quos, aperiam architecto distinctio perspiciatis? Molestiae, eum nam expedita soluta exercitationem iste harum ea!</p>
 
-            <form>
-                <h4>Describe your feelings and opinions about the situation, trying to use I statements as much as possible</h4>
-                <textarea></textarea>
+            <form class="express-form">
+                <h4>Describe your feelings and opinions about the situation, trying to use I statements as much as possible:</h4>
+                <textarea id="expression" rows="5"></textarea>
             </form>
 
         </section>
@@ -83,12 +84,12 @@
             <h2>Assert</h2>
             <p>At this point, clearly ask for what you want or say no. Be specific when giving instructions in this step.</p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consectetur odio dolore possimus perspiciatis adipisci facere atque autem id accusantium corrupti tempora doloremque, aliquid dolorum dolorem inventore minima nihil. Iure?</p>
+            <p class="no-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem ducimus eveniet minus quos vero blanditiis laboriosam ex. Nam magnam rem tenetur ullam possimus, aliquam totam perspiciatis a in sint.</p>
 
-            <form>
-                <h4>Enter your assertion below, being as clear as possible in how it can be followed</h4>
-                <textarea></textarea>
+            <form class="assert-form">
+                <h4>Enter your assertion below, being as clear as possible in how it can be followed:</h4>
+                <textarea id="assertion" rows="5"></textarea>
             </form>
 
         </section>
@@ -98,12 +99,12 @@
             <h2>Reinforce</h2>
             <p>Now, give positive reinforcement in regards to your request. Explain why honoring the request would lead to positive outcomes.</p>
             
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rerum temporibus provident numquam harum itaque aperiam sed, quis ad nobis, minus quod vero quaerat excepturi similique dicta rem, obcaecati voluptatibus!</p>
+            <p class="no-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima expedita esse veniam voluptatibus nemo voluptate in quasi quas necessitatibus. Aut explicabo necessitatibus ea. Provident illum debitis voluptatum hic sed.</p>
 
-            <form>
-                <h4>List at least one positive outcome from your goal</h4>
-                <input type="text" placeholder="A positive outcome">
+            <form class="reinforcement-form">
+                <h4>List at least one positive outcome from your goal:</h4>
+                <input class="reinforcement" type="text" placeholder="A positive outcome">
             </form>
 
         </section>
@@ -113,8 +114,13 @@
             <h2>Stay Mindful</h2>
             <p>It is important during the conversation to stay on track. If the other party responds with agression or defensivness, do not engage with it. Rather, continue stating your request or no like a broken record. Getting off topic will reduce the likelyhood of your goal being met.</p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ratione voluptatem aperiam praesentium cupiditate dolore obcaecati consequatur sint deleniti cum quaerat nostrum quibusdam hic quo quam, libero pariatur rem architecto.</p>
+            <p class="no-example">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi et voluptas fugiat ratione laudantium mollitia voluptate atque officia. Iusto, ipsam? Dolores deleniti vel sint nesciunt delectus illo totam, neque distinctio.</p>
+
+            <form class="mindful-form">
+                <h4>List at least one way you can stay grounded during conversation:</h4>
+                <input class="strategy" type="text" placeholder="Mindfulness strategy">
+            </form>
 
         </section>
 
@@ -122,12 +128,12 @@
             <h2>Appear Confident</h2>
             <p>During the conversation, keep a strong posture (stand/sit tall), a strong tone, and keep stammering and uncertainty to a minimum. This makes it more likely for the other party to take your request seriously, and it makes you harder to turn down.</p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor fugit, rem eum voluptatum omnis ex impedit neque doloremque totam, quasi maxime aperiam, rerum vel nostrum necessitatibus minus quod obcaecati.</p>
+            <p class="no-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod eos nihil quis provident eaque, sed dolores nisi? Soluta aut error nostrum nisi exercitationem placeat dicta expedita consequatur accusamus iure!</p>
 
-            <form>
+            <form class="appear-confident-form">
                 <h4>What is an area to be mindful of during conversation to appear confident?</h4>
-                <input type="text">
+                <input class="appear-confident" type="text">
             </form>
         </section>
 
@@ -136,13 +142,13 @@
             <h2>Negotiate</h2>
             <p>In some cases, it is important to give a little to get a little. If the other party isn't in agreeance with your request or no, it can be useful to try to find an alternate solution to the issue that aligns with your goals. You could eventually ask the other party to offer a solution that would work. Negotiation can also serve to make future interactions with the other party easier.</p>
 
-            <p class="ask-example"></p>
-            <p class="no-example"></p>
+            <p class="ask-example">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro rerum saepe quisquam earum expedita vitae, incidunt officiis ad eos hic tenetur reprehenderit iste cumque ducimus eaque voluptatem qui ullam molestias.</p>
+            <p class="no-example">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium iure, nulla, reprehenderit quis corporis ullam necessitatibus recusandae quos incidunt voluptate eum rerum blanditiis corrupti a voluptatem nostrum itaque adipisci. Culpa.</p>
 
-            <form>
+            <form class="negotiate-form">
                 <h4>What are some ways your request can be adjusted to make room for the other party?</h4>
-                <input type="text" placeholder="One adjustment">
-                <input type="text" placeholder="Another adjustment">
+                <input class="negotiation" type="text" placeholder="One adjustment">
+                <input class="negotiation" type="text" placeholder="Another adjustment">
             </form>
 
         </section>
@@ -154,6 +160,54 @@
         <h2>Completed</h2>
 
         <p>Script loads down here</p>
+
+        <article>
+
+            <section>
+                <h6>Topic</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Describe</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Express</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Assert</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Reinforce</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Stay Mindful</h6>
+                <ul>
+
+                </ul>
+            </section>
+
+            <section>
+                <h6>Appear Confident</h6>
+                <p></p>
+            </section>
+
+            <section>
+                <h6>Negotiate</h6>
+                <ul>
+                
+                </ul>
+            </section>
+
+        </article>
 
     </footer>
     
