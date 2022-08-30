@@ -41,11 +41,12 @@ addNegotiationButton.addEventListener("click", () => {
 
 
 
-const generateButton = document.querySelector("#submit-button");
-generateButton.addEventListener("click", create_dearman_guide);
+const form = document.querySelector("form");
+form.addEventListener("submit", create_dearman_guide);
 
-function create_dearman_guide() {
-    const targetSection = document.querySelector("footer");
+function create_dearman_guide(e) {
+    e.preventDefault();
+    const targetSection = document.querySelector("#guide");
     const dearmanMaker = new Dearman_entry;
     dearmanMaker.append_document(targetSection);
 }
@@ -60,54 +61,46 @@ function create_dearman_guide() {
 class Dearman_entry {
 
     get_topic() {
-        const topicForm = document.querySelector(".topic-form");
-        const topic = topicForm.querySelector("#topic").value;
+        const topic = document.querySelector("#topic").value;
         return topic;
     }
 
     get_describe_entry() {
-        const describeForm = document.querySelector(".describe-form");
-        const description = describeForm.querySelector("#description").value;
+        const description = document.querySelector("#description").value;
         return description;
     }
 
     get_express_entry() {
-        const expressForm = document.querySelector(".express-form");
-        const expression = expressForm.querySelector("#expression").value;
+        const expression = document.querySelector("#expression").value;
         return expression;
     }
 
     get_assert_entry() {
-        const assertForm = document.querySelector(".assert-form");
-        const assertion = assertForm.querySelector("#assertion").value;
+        const assertion = document.querySelector("#assertion").value;
         return assertion;
     }
 
     get_reinforcement_entry() {
         // Can be multiple or just one
-        const reinforcmentForm = document.querySelector(".reinforcement-form");
-        let reinforcements = reinforcmentForm.querySelectorAll(".reinforcement");
+        let reinforcements = document.querySelectorAll(".reinforcement");
         reinforcements = Array.from(reinforcements).map(x => x.value);
         return reinforcements;
     }
 
     get_mindful_entry() {
-        const mindfulForm = document.querySelector(".mindful-form");
-        let strategies = mindfulForm.querySelectorAll(".strategy");
+        let strategies = document.querySelectorAll(".strategy");
         strategies = Array.from(strategies).map(x=>x.value);
         return strategies;
     }
 
     get_appear_confident_entry() {
-        const confidentForm = document.querySelector(".appear-confident-form");
-        let formEntries = confidentForm.querySelectorAll(".appear-confident");
+        let formEntries = document.querySelectorAll(".appear-confident");
         formEntries = Array.from(formEntries).map(x=>x.value);
         return formEntries;
     }
 
     get_negotiate_entry() {
-        const negotiateForm = document.querySelector(".negotiate-form");
-        let negotiations = negotiateForm.querySelectorAll(".negotiation");
+        let negotiations = document.querySelectorAll(".negotiation");
         negotiations = Array.from(negotiations).map(x=>x.value);
         return negotiations;
     }

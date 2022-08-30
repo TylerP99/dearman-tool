@@ -2,12 +2,265 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+/* General */
+a {
+    color: inherit;
+    font-size: 2rem;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background: #eee;
+    text-decoration: none;
+}
+a:hover {
+    background: #ddd;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 2rem;
+    text-indent: 4rem;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px solid;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+
+    border-bottom: 5px solid;
+
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
 /* Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 30rem 5rem;
+
+    background: #B298DC;
+}
+#hero p {
+    font-size: 2.5rem;
+    width: 50%;
+    text-indent: none;
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
 /* About */
+#about {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20rem 20%;
+    background: #eee;
+}
+#about p {
+    margin-bottom: 3rem;
+}
+
+ol {
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+}
+
+strong{
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 /* DEAR MAN */
+#dearman {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5rem 0;
+}
+
+#topic-section {
+    width: 50%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+select {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#topic-section label, #topic-section input {
+    width: auto;
+}
+#topic-section label {
+    margin-right: 1rem;
+}
+
+#dearman p {
+    width: 80%;
+}
+
+#dearman form {
+    width: 100%;
+}
+
+#dearman > form > section > * {
+    margin-bottom: 2rem;
+}
+
+#describe, #assert, #stay-mindful, #negotiate, #express, #reinforce, #appear-confident {
+    width: 80%;
+
+    margin-bottom: 5rem;
+
+    box-shadow: 0 20px 10px -10px rgba(0,0,0,0.2);
+
+    padding: 2rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#describe, #assert, #stay-mindful, #negotiate {
+    margin-right: auto;
+    color: #eee;
+    background: #A663CC;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#express, #reinforce, #appear-confident {
+    margin-left: auto;
+    background: #B9FAF8;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 60%;
+}.form-inputs > section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+input, textarea {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+#submit-button {
+    margin: 0 auto;
+    display: block;
+
+    color: inherit;
+    font-size: 2rem;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background: #eee;
+    text-decoration: none;
+}
+#submit-button:hover {
+    background: #ddd;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* Reference */
+#guide {
+    padding: 20rem 0;
+}
+#guide article {
+    margin: 0 auto;
+    width: 50%;
+    background: #fff;
+    border: 1px solid;
+
+    padding: 2rem;
+}
+article h2 {
+    margin-bottom: 1rem;
+}
+article h4 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+article p, article ul {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+#guide article p {
+    text-indent: 0;
+}
 
 /* Footer Credits n Stuff */
+footer{
+    background: #B8D0EB;
+}
