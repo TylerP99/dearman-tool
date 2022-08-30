@@ -13,18 +13,19 @@ body {
     margin: 0 auto;
 }
 
-header, footer {
+footer {
     padding: 2rem 6rem 4rem 6rem;
 }
 
 header {
     background: #B298DC;
 
-    padding-top: 10rem;
+    padding: 20rem 2rem;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 header > section {
@@ -32,6 +33,16 @@ header > section {
     background: #eee;
     border-radius: 25px;
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: -8rem;
+    display: inline-block;
 }
 
 header strong {
@@ -55,14 +66,12 @@ footer {
 
 h1 {
     
-    font-size: 6rem;
+    font-size: 10rem;
     font-weight: bold;
 
     border-bottom: 5px solid;
 
     margin-bottom: 3rem;
-
-    width: 40%;
 }
 
 h2 {
@@ -214,12 +223,23 @@ article {
 
 article section {
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 article h4 {
     margin: none;
     padding: none;
     border-bottom: 3px solid;
+    display: inline-block;
+    width: auto;
+}
+
+article ul {
+    font-size: 1.6rem;
+
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 1rem;
 }
 
 
